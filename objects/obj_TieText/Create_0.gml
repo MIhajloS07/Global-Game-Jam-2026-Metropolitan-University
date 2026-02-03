@@ -1,0 +1,1 @@
+audio_play_sound(TieSound, 0, false)

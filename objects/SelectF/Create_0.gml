@@ -1,0 +1,1 @@
+global.savedIndexF = image_index

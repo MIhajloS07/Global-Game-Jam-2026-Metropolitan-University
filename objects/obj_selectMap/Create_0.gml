@@ -1,0 +1,6 @@
+audio_stop_sound(BritneyChoose)
+audio_stop_sound(SamanthaChoose)
+audio_stop_sound(ChristinaChoose)
+audio_stop_sound(LucaChoose)
+audio_stop_sound(AlexandarChoose)
+audio_stop_sound(ScottChoose)
