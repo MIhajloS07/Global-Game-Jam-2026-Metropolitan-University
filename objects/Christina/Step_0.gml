@@ -256,9 +256,9 @@ if (keyboard_check_pressed(ord("Q")) && attack_cooldown == 0) {
 
     // Napad na protivnika (zli likovi)
     var e;
-    if (global.savedIndexF == 0) e = instance_place(x + image_xscale*32, y, Britney);
-    if (global.savedIndexF == 1) e = instance_place(x + image_xscale*32, y, Samantha);
-    if (global.savedIndexF == 2) e = instance_place(x + image_xscale*32, y, Alexander);
+    if (global.savedIndexF == 0) e = instance_place(x + image_xscale/8, y, Britney);
+    if (global.savedIndexF == 1) e = instance_place(x + image_xscale/8, y, Samantha);
+    if (global.savedIndexF == 2) e = instance_place(x + image_xscale/8, y, Alexander);
 
     if (e != noone) {
         if (!e.isDodge) e.hp -= damage;

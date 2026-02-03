@@ -175,6 +175,7 @@
     {"id":{"name":"BricksBack","path":"sprites/BricksBack/BricksBack.yy",},},
     {"id":{"name":"BricksDarkBack","path":"sprites/BricksDarkBack/BricksDarkBack.yy",},},
     {"id":{"name":"christina_ATTACK_Photoroom","path":"sprites/christina_ATTACK_Photoroom/christina_ATTACK_Photoroom.yy",},},
+    {"id":{"name":"christina_dmg","path":"sprites/christina_dmg/christina_dmg.yy",},},
     {"id":{"name":"CHRISTINA_JUMP","path":"sprites/CHRISTINA_JUMP/CHRISTINA_JUMP.yy",},},
     {"id":{"name":"christina_standing_2__1_","path":"sprites/christina_standing_2__1_/christina_standing_2__1_.yy",},},
     {"id":{"name":"christina_standing_2__1_45","path":"sprites/christina_standing_2__1_45/christina_standing_2__1_45.yy",},},

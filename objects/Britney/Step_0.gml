@@ -273,7 +273,7 @@ if (keyboard_check_pressed(ord("J")) && attack_cooldown == 0) {
     var e;
     if (global.savedIndexU == 0) e = instance_place(x + image_xscale*32, y, Scott);
     if (global.savedIndexU == 1) e = instance_place(x + image_xscale*32, y, Luca);
-    if (global.savedIndexU == 2) e = instance_place(x + image_xscale*32, y, Christina);
+    if (global.savedIndexU == 2){ e = instance_place(x + image_xscale*32, y, Christina);}
 
     if (e != noone) {
         if (!e.isDodge) e.hp -= damage;
@@ -317,7 +317,10 @@ if (keyboard_check_pressed(ord("K")) && ability_cooldown == 0 && state != "attac
     // pomeri unapred sa većim dash-om
     x += image_xscale * ability_distance;
     hspd = image_xscale * ability_speed;
-
+	isDodge = true;
+	dodge_cooldown = dodge_cooldown_max;
+    dodge_timer = room_speed; // traje 1 sekundu
+    
     sprite_index = spr_britney_ability_;
     image_index = 0;
     image_speed = 0.4;
