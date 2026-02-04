@@ -1,1 +1,1 @@
-alarm[7]=room_speed*15
+alarm[7]= room_speed * 15

@@ -1,13 +1,12 @@
 /// CREATE EVENT obj_controller
 
-// Ako globalna promenljiva još ne postoji, napravi je
+// If gloval var dont exist, define it
 if (!variable_global_exists("EnabledSound")) {
-    global.EnabledSound = true; // default: zvuk uključen
+    global.EnabledSound = true; // default: sound on
 }
-
-// Postavi zvuk na osnovu globalnog stanja
+// set sound based on var
 if (global.EnabledSound) {
-    audio_master_gain(1); // zvuk uključen
+    audio_master_gain(1); // sound on
 } else {
-    audio_master_gain(0); // zvuk isključen
+    audio_master_gain(0); // sound off
 }

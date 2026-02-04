@@ -5,14 +5,13 @@ if (attack_cooldown > 0) attack_cooldown -= 1;
 if (dodge_cooldown > 0) dodge_cooldown -= 1;
 if (ability_cooldown > 0) ability_cooldown -= 1;
 
-// 2) Movement (samo ako nije u napadu ili dodge-u ili ability-u)
+// 2) Movement 
 hspd = 0;
 
 if (state != "attack" && state != "dodge" && state != "ability") {
     if (keyboard_check(vk_left)) hspd = -move_speed;
     if (keyboard_check(vk_right)) hspd = move_speed;
-
-    // Skok samo ako je na podu
+    // Skok if player is on floor
     if (keyboard_check_pressed(vk_up) && on_ground) {
         vspd = jump_speed;
 		audio_play_sound(JumpSound, 0, false)
@@ -21,14 +20,14 @@ if (state != "attack" && state != "dodge" && state != "ability") {
     }
 }
 
-// 3) Gravitacija uvek deluje
+// 3) Gravity
 vspd += grav;
 
-// 4) Pomeri lika
+// 4) Move player
 x += hspd;
 y += vspd;
 
-// 5) Provera poda (pretpostavimo da je pod na y = 568)
+// 5) Check floor
 if (y >= 568) {
     y = 568;
     vspd = 0;
@@ -38,7 +37,7 @@ if (y >= 568) {
     on_ground = false;
 }
 
-// 6) State prema kretanju
+// 6) State for movement
 if (hspd != 0) {
     if (state != "attack" && state != "dodge" && state != "jump" && state != "ability") state = "walk";
 } else {
@@ -54,13 +53,11 @@ if (keyboard_check_pressed(ord("J")) && attack_cooldown == 0) {
     sprite_index = spr_samantha_attack;
     image_index = 0;
     image_speed = 0.3;
-
-    // Napad na protivnika (proverava da li je blizu)
+    // Attack an opponent (on low distance)
     var e;
     if (global.savedIndexU == 0) e = instance_place(x + image_xscale*32, y, Scott);
     if (global.savedIndexU == 1) e = instance_place(x + image_xscale*32, y, Luca);
     if (global.savedIndexU == 2) e = instance_place(x + image_xscale*32, y, Christina);
-
     if (e != noone) {
         if (!e.isDodge) e.hp -= damage;
     }
@@ -94,19 +91,18 @@ if (isDodge) {
     }
 }
 
-// 9) Ability (K) – samo ako ima masku
+// 9) Ability (K) – if he have mask
 if (keyboard_check_pressed(ord("K")) && ability_cooldown == 0 && state != "attack" && HaveMask && canUseAbillity) {
     state = "ability";
     ability_cooldown = ability_cooldown_max;
-    ability_timer = 25; // koliko traje ability animacija
+    ability_timer = 25; // ability duration
 	audio_play_sound(AbilitySound, 0, false)
-    // pomeri unapred sa većim dash-om
+    // move forward with dash ability
     x += image_xscale * ability_distance;
     hspd = image_xscale * ability_speed;
 	isDodge = true;
 	dodge_cooldown = dodge_cooldown_max;
-    dodge_timer = room_speed; // traje 1 sekundu
-    
+    dodge_timer = room_speed;   
     sprite_index = spr_samantha_ability;
     image_index = 0;
     image_speed = 0.4;
@@ -147,11 +143,11 @@ else if (state == "ability") {
     image_speed = 0.4;
 }
 
-// 11) Flip sprite prema smeru
+// 11) Flip sprite 
 if (hspd < 0) image_xscale = -1;
 if (hspd > 0) image_xscale = 1;
 
-// 12) Jump završetak
+// 12) Jump finish
 if (state == "jump" && on_ground) {
     state = "idle";
     sprite_index = spr_samantha_idle;
@@ -165,11 +161,11 @@ if (hp <= 0){
 	instance_destroy();
 }
 
-// 14) Kolizija sa ivicama ekrana
+// 14) Collision with screen borders
 if (x < 0) x = 0;
 if (x > room_width) x = room_width;
 
-// 15) Mask logika
+// 15) Mask logic
 if (hp <= hp_max * 0.3 && HaveMask) {
     HaveMask = false
 	canUseAbillity = false

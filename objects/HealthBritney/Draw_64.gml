@@ -10,11 +10,11 @@ var hp_ratio = Britney.hp / Britney.hp_max;
 draw_set_color(c_white)
 draw_rectangle(bar_x - 5, bar_y - 5, bar_x + bar_w + 5, bar_y + bar_h + 5, false)
 
-// Pozadina bara (crna)
+// Bar backgroud
 draw_set_color(c_black);
 draw_rectangle(bar_x, bar_y, bar_x + bar_w, bar_y + bar_h, false);
 
-// Odredi boju prema procentu
+// Check color by percentage
 if (hp_ratio > 0.6) {
     draw_set_color(c_green);
 }
@@ -25,10 +25,10 @@ else {
     draw_set_color(c_red);
 }
 
-// Nacrtaj trenutni HP deo
+// Draw current hp
 draw_rectangle(bar_x, bar_y, bar_x + bar_w * hp_ratio, bar_y + bar_h, false);
 
-// Tekst iznad
+// Text above
 draw_set_color(c_white);
 draw_set_font(NameFont)
 draw_text(bar_x, bar_y + 20 ,"Britney");

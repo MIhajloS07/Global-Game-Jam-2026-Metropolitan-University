@@ -5,15 +5,13 @@ if (attack_cooldown > 0) attack_cooldown -= 1;
 if (dodge_cooldown > 0) dodge_cooldown -= 1;
 if (ability_cooldown > 0) ability_cooldown -= 1;
 
-
-// 2) Movement (samo ako nije u napadu ili dodge-u)
+// 2) Movement 
 hspd = 0;
-
 if (state != "attack" && state != "dodge") {
     if (keyboard_check(ord("A"))) hspd = -move_speed;
     if (keyboard_check(ord("D"))) hspd = move_speed;
 
-    // Skok samo ako je na podu
+    // Jumo only when player is on ground
     if (keyboard_check_pressed(ord("W")) && on_ground) {
         vspd = jump_speed;
 		audio_play_sound(JumpSound, 0, false)
@@ -22,14 +20,14 @@ if (state != "attack" && state != "dodge") {
     }
 }
 
-// 3) Gravitacija uvek deluje
+// 3) Gravity
 vspd += grav;
 
-// 4) Pomeri lika
+// 4) Move player
 x += hspd;
 y += vspd;
 
-// 5) Provera poda (pretpostavimo da je pod na y = 568)
+// 5)Check floor
 if (y >= 568) {
     y = 568;
     vspd = 0;
@@ -40,7 +38,7 @@ if (y >= 568) {
     on_ground = false;
 }
 
-// 6) State prema kretanju
+// 6) State for movement
 if (hspd != 0) {
     if (state != "attack" && state != "dodge" && state != "jump") state = "walk";
 } else {
@@ -56,7 +54,6 @@ if (keyboard_check_pressed(ord("Q")) && attack_cooldown == 0) {
     sprite_index = spr_scott_attack_;
     image_index = 0;
     image_speed = 0.3;
-
 	if(global.savedIndexF==0){
 		var e=instance_place(x, y, Britney);
 		if(e!=noone){
@@ -94,14 +91,16 @@ if (keyboard_check_pressed(vk_shift) && dodge_cooldown == 0 && state != "attack"
     dodge_cooldown = dodge_cooldown_max;
 	isDodge = true
     dodge_cooldown = dodge_cooldown_max;
-	dodge_timer = room_speed   // pomeri unazad
+	dodge_timer = room_speed   // Move behind
     x -= image_xscale * dodge_distance;
 }
+
 if(isDodge){
 	dodge_timer-=1;
 	if(dodge_timer<=0)
 		isDodge=false;
 }
+
 // Ability (K)
 if (keyboard_check_pressed(ord("E")) && ability_cooldown == 0 && state != "attack" && HaveMask) {
     state = "ability";
@@ -127,13 +126,11 @@ if (ability_timer > 0) {
     image_speed = 0.1;
 }
 
-
 // 9) Set animation
 if (state == "idle") {
     sprite_index = spr_scott_idle;
     image_speed = 0.2;
 }
-
 else if (state == "walk") {
     sprite_index = spr_scott_idle; // koristiš idle i za walk
     image_speed = 0.3;
@@ -151,11 +148,11 @@ else if (state == "jump") {
     image_speed = 0.4;
 }
 
-// 10) Flip sprite prema smeru
+// 10) Flip sprite 
 if (hspd < 0) image_xscale = -1;
 if (hspd > 0) image_xscale = 1;
 
-// 11) Attack anim završetak
+// 11) Attack anim finish
 if (state == "attack" && image_index >= image_number - 1) {
     state = "idle";
     sprite_index = spr_scott_idle;
@@ -163,7 +160,7 @@ if (state == "attack" && image_index >= image_number - 1) {
     image_speed = 0.3;
 }
 
-// 12) Dodge završetak
+// 12) Dodge finish
 if (state == "dodge" && image_index >= image_number - 1) {
     state = "idle";
     sprite_index = spr_scott_idle;
@@ -171,8 +168,7 @@ if (state == "dodge" && image_index >= image_number - 1) {
     image_speed = 0.3;
 }
 
-
-// 13) Jump završetak (kad animacija prođe, ali i dalje si u vazduhu ostaje jump)
+// 13) Jump finish
 if (state == "jump" && on_ground) {
     state = "idle";
     sprite_index = spr_scott_idle;
@@ -185,6 +181,6 @@ if (hp <= 0){
 	room_goto(rm_winF);
 	instance_destroy();
 }
-// 15) Kolizija sa ivicama ekrana
+// 15) Collisions with screen
 if (x < 0) x = 0;
 if (x > room_width) x = room_width;

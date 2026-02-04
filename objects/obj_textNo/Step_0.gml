@@ -7,6 +7,3 @@ if (global.map_selected || global.map_selected2)
 else
 	visible = false
 	
-	
-//show_message(global.savedIndexF)
-//show_message(global.savedIndexU)
