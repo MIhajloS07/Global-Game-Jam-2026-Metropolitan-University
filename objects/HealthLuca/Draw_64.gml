@@ -31,4 +31,4 @@ draw_rectangle(bar_x, bar_y, bar_x + bar_w * hp_ratio, bar_y + bar_h, false);
 // Text above
 draw_set_color(c_white);
 draw_set_font(NameFont)
-draw_text(bar_x, bar_y + 20 ,"Luca");
+draw_text(bar_x + 25, bar_y + 10 ,"Luca");

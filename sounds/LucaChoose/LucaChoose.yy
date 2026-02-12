@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":3.7333333,
+  "duration":4.16,
   "exportDir":"",
   "name":"LucaChoose",
   "parent":{

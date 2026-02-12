@@ -1,0 +1,1 @@
+audio_play_sound(SelectCharacterSound, 0 , false)

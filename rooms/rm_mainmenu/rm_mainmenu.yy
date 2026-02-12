@@ -12,11 +12,13 @@
     {"name":"inst_74CA5F1A","path":"rooms/rm_mainmenu/rm_mainmenu.yy",},
     {"name":"inst_3DA0ACE","path":"rooms/rm_mainmenu/rm_mainmenu.yy",},
     {"name":"inst_52FC09AC","path":"rooms/rm_mainmenu/rm_mainmenu.yy",},
+    {"name":"inst_6745F830","path":"rooms/rm_mainmenu/rm_mainmenu.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances_back","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_52FC09AC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_52FC09AC","objectId":{"name":"sound_contoll","path":"objects/sound_contoll/sound_contoll.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1024.0,"y":576.0,},
+        {"$GMRInstance":"v4","%Name":"inst_6745F830","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6745F830","objectId":{"name":"versionObj","path":"objects/versionObj/versionObj.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.808,"scaleY":0.744,"x":1024.0,"y":608.0,},
       ],"layers":[],"name":"Instances_back","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_5B5D7936","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5B5D7936","objectId":{"name":"obj_startbutton","path":"objects/obj_startbutton/obj_startbutton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0625,"scaleY":0.75,"x":684.0,"y":120.0,},
