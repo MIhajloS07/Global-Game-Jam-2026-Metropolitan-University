@@ -116,7 +116,13 @@ The idea stems from a desire to stop hackers and illegal activity on the interne
 </td>
     <td align="center" width="33%"><img width="224" height="389" alt="image" src="https://github.com/user-attachments/assets/66274ce9-719f-4508-9431-cf40d6713fba" />
 </td>
-    <td align="center" width="33%"><img src="assets/readme/characters/character-3.png" alt="Character 3" width="160"><br><b>Character 3</b><br><sub>Short description</sub></td>
+    <td align="center" width="33%"><img width="252" height="385" alt="image" src="https://github.com/user-attachments/assets/71b580f9-5fbd-4d05-8636-0d23ae2a3c1d" />
+</td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><img width="252" height="385" alt="image" src="https://github.com/user-attachments/assets/71b580f9-5fbd-4d05-8636-0d23ae2a3c1d" /></td>
+    <td align="center" width="33%"><img width="252" height="385" alt="image" src="https://github.com/user-attachments/assets/71b580f9-5fbd-4d05-8636-0d23ae2a3c1d" /></td>
+    <td align="center" width="33%"><img width="252" height="385" alt="image" src="https://github.com/user-attachments/assets/71b580f9-5fbd-4d05-8636-0d23ae2a3c1d" /></td>
   </tr>
 </table>
 
