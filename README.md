@@ -1,7 +1,6 @@
 <div align="center">
 
-<!-- Banner: add a 1280x640 image at assets/readme/banner.png -->
-<img src="assets/readme/banner.png" alt="UnderCover banner" width="100%">
+<img width="1026" height="426" alt="image" src="https://github.com/user-attachments/assets/e01060ff-c54f-4db2-aa98-a9b02c84ddfb" />
 
 <br>
 <br>
@@ -88,12 +87,16 @@ The idea stems from a desire to stop hackers and illegal activity on the interne
 
 <table>
   <tr>
-    <td align="center"><img src="assets/readme/menu.png" alt="Main menu" width="420"><br><sub><b>Main menu</b></sub></td>
-    <td align="center"><img src="assets/readme/select.png" alt="Character select" width="420"><br><sub><b>Character select</b></sub></td>
+    <td align="center"><img width="688" height="381" alt="image" src="https://github.com/user-attachments/assets/4bd3906f-53e3-4568-9bc3-e2a1062b7fa0" />
+</td>
+    <td align="center"><img width="694" height="378" alt="image" src="https://github.com/user-attachments/assets/1fd40b08-e1c4-4614-a1fb-924f43460d8b" />
+</td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/readme/fight-1.png" alt="Fight" width="420"><br><sub><b>Head-to-head combat</b></sub></td>
-    <td align="center"><img src="assets/readme/fight-2.png" alt="Mask break" width="420"><br><sub><b>Mask down</b></sub></td>
+    <td align="center"><img width="694" height="388" alt="image" src="https://github.com/user-attachments/assets/702c601c-5c2c-4090-9540-e09b9cc0a999" />
+</td>
+    <td align="center"><img width="687" height="370" alt="image" src="https://github.com/user-attachments/assets/679a666f-07ca-4b95-844f-029281e707f2" />
+</td>
   </tr>
 </table>
 
@@ -125,7 +128,8 @@ The idea stems from a desire to stop hackers and illegal activity on the interne
 
 1. Open the **[UnderCover page on itch.io](https://mihajlo-stoiljkovic.itch.io/undercover)**.
 2. Download **`UnderCover.exe`** (about 38 MB).
-3. Run the file. No installation is required.
+3. Run the installation file (Standard Wizard installation)
+4. Run the game and enjoy with friends 
 
 > [!NOTE]
 > Windows may show a SmartScreen warning because the game is not digitally signed. This is normal for independent games and the game is completely safe. Select **More info**, then **Run anyway**.
