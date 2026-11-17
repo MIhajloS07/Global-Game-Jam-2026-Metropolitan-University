@@ -114,7 +114,8 @@ The idea stems from a desire to stop hackers and illegal activity on the interne
   <tr>
     <td align="center" width="33%"><img width="292" height="373" alt="image" src="https://github.com/user-attachments/assets/723002e2-68d7-413a-9635-a80e613e6b63" />
 </td>
-    <td align="center" width="33%"><img src="assets/readme/characters/character-2.png" alt="Character 2" width="160"><br><b>Character 2</b><br><sub>Short description</sub></td>
+    <td align="center" width="33%"><img width="224" height="389" alt="image" src="https://github.com/user-attachments/assets/66274ce9-719f-4508-9431-cf40d6713fba" />
+</td>
     <td align="center" width="33%"><img src="assets/readme/characters/character-3.png" alt="Character 3" width="160"><br><b>Character 3</b><br><sub>Short description</sub></td>
   </tr>
 </table>
