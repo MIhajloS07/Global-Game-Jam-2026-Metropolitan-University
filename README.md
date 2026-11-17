@@ -124,7 +124,8 @@ The idea stems from a desire to stop hackers and illegal activity on the interne
 </td>
     <td align="center" width="33%"><img width="247" height="408" alt="image" src="https://github.com/user-attachments/assets/434813b3-a8fe-41d4-9cd8-7128745308a6" />
 </td>
-    <td align="center" width="33%"><img width="252" height="385" alt="image" src="https://github.com/user-attachments/assets/71b580f9-5fbd-4d05-8636-0d23ae2a3c1d" /></td>
+    <td align="center" width="33%"><img width="215" height="369" alt="image" src="https://github.com/user-attachments/assets/bf5dfe47-7795-4663-af9b-c9bc298e5ba7" />
+</td>
   </tr>
 </table>
 
