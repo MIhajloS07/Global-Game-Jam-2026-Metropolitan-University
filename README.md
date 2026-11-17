@@ -120,7 +120,8 @@ The idea stems from a desire to stop hackers and illegal activity on the interne
 </td>
   </tr>
   <tr>
-    <td align="center" width="33%"><img width="252" height="385" alt="image" src="https://github.com/user-attachments/assets/71b580f9-5fbd-4d05-8636-0d23ae2a3c1d" /></td>
+    <td align="center" width="33%"><img width="214" height="387" alt="image" src="https://github.com/user-attachments/assets/0145d13e-3936-46d5-a0da-f1f51d140b7c" />
+</td>
     <td align="center" width="33%"><img width="252" height="385" alt="image" src="https://github.com/user-attachments/assets/71b580f9-5fbd-4d05-8636-0d23ae2a3c1d" /></td>
     <td align="center" width="33%"><img width="252" height="385" alt="image" src="https://github.com/user-attachments/assets/71b580f9-5fbd-4d05-8636-0d23ae2a3c1d" /></td>
   </tr>
